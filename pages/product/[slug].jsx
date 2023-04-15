@@ -110,7 +110,7 @@ const ProductDetails = ({product, products}) => {
                 <div className="text-md font-medium text-black/[0.5] cursor-pointer">Select Guide</div>
               </div>
               <div id='gridColumn' className="grid grid-cols-3 gap-2">
-                {p.size?.map((item, i) => {
+                {p.size?.data?.map((item, i) => {
                   return (
                     <div 
                       key={i}
