@@ -77,12 +77,15 @@ const Header = () => {
 
         <div className='flex items-center gap-2 text-black'>
           {/* Icon Start */}
-          <div className='w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-black/[0.05] cursor-pointer relative'>
-            <IoMdHeartEmpty className='text-[19px] md:text-[24px]'/>
-            <span className='h-[14px] md:h-[18px] min-w-[14px] rounded-full md:min-w-[18px] absolute top-1 left-6 flex justify-center items-center text-white bg-red-600 text-[10px] md:text-[12px] px-[2px] md:px-[5px]'>
-              55
-            </span>
-          </div>
+          <Link href={"/_favourites"}>
+            <div className='w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-black/[0.05] cursor-pointer relative'>
+              <IoMdHeartEmpty className='text-[19px] md:text-[24px]'/>
+              <span className='h-[14px] md:h-[18px] min-w-[14px] rounded-full md:min-w-[18px] absolute top-1 left-6 flex justify-center items-center text-white bg-red-600 text-[10px] md:text-[12px] px-[2px] md:px-[5px]'>
+                55
+              </span>
+            </div>
+          </Link>
+         
           {/* Icon end */}
 
           {/* Icon Start */}

@@ -77,7 +77,7 @@ const Footer = () => {
         </ul>
       </Wrapper>
       <Wrapper className="flex justify-between items-centar max-md:flex-col max-md:justify-center">
-        <div className="text-[12px] max-md:text-center ease duration-200 text-white/[0.5] hover:text-white/[1] max-md:mb-[5px]">© 2023 Nike, Inc. All Rights Reserved</div>
+        <div className="text-[12px] max-md:text-center ease duration-200 text-white/[0.5] hover:text-white/[1] max-md:mb-[5px]">© 2023 Nike, Сделано Азимом{')'}</div>
          <ul className="flex gap-[20px] max-md:justify-center max-md:gap-[10px] max-md:mb-[10px]">
           {fourthData.map((item) => {
             return (

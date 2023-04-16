@@ -27,7 +27,7 @@ const MobileMenu = ({ showCatMenu, setShowCatMenu, setMobileMenu, categories }) 
           <Fragment key={item.id}>
             {!!item?.subMenu ? (
               <li className={showCatMenu 
-                ? 'h-[400px] ease duration cursor-pointer flex flex-col py-4 px-5 border-b relative' 
+                ? 'ease duration cursor-pointer flex flex-col py-4 px-5 border-b relative' 
                 : 'cursor-pointer ease duration flex flex-col py-4 px-5 border-b relative h-[57px]'}
                 onClick={() => setShowCatMenu(!showCatMenu)}
               >
