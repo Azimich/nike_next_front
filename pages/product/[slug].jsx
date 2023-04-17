@@ -11,6 +11,7 @@ import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import { addToCart } from '@/store/cartSlice'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { addToFavorite } from '@/store/favoriteSlice'
 
 
 const ProductDetails = ({product, products}) => {
@@ -47,6 +48,13 @@ const ProductDetails = ({product, products}) => {
       }))
       notify()
     }
+  }
+
+  const handleAddToFavorites = () => {
+    dispatch(addToFavorite({
+      ...product?.data?.[0],
+    }))
+    console.log("addToFavorites");
   }
 
   return (
@@ -139,7 +147,9 @@ const ProductDetails = ({product, products}) => {
             >
               Add to Cart
             </button>
-            <button className="w-full py-4 rounded-full border border-black text-lg font-medium transition-transform active:scale-95 mb-10 hover:bg-red-700 hover:border-red-700 hover:text-white flex items-center justify-center gap-1 ease duration-300">
+            <button 
+              onClick={handleAddToFavorites}
+             className="w-full py-4 rounded-full border border-black text-lg font-medium transition-transform active:scale-95 mb-10 hover:bg-red-700 hover:border-red-700 hover:text-white flex items-center justify-center gap-1 ease duration-300">
               Whishlist
               <IoMdHeartEmpty size={20}/>
             </button>

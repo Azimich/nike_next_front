@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { getDiscountedPricePersentage } from '@/utils/helper'
 
 
-const ProductCard = ({ data: {attributes: prod, id} }) => {
+const ProductCard = ({ data: {attributes: prod} }) => {
   return (
     <Link href={`/product/${prod.slug}`} 
       className='transform overflow-hidden bg-white duration-200 hover:scale-105 cursor-pointer'

@@ -5,7 +5,7 @@ import useSWR from 'swr'
 import Wrapper from '@/components/Wrapper'
 import ProductCard from '@/components/ProductCard'
 import { fetchDataFromApi } from '@/utils/api'
-const maxResult = 3
+const maxResult = 10
 
 const Category = ({category, products, slug}) => {
   const [pageIndex, setPageIndex] = useState(1)
